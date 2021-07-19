@@ -3,11 +3,75 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Welcome to my world!</title>
+        <title> Personal portfolio | Parteek! </title>
+
+        <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- ===== Box icons ===== -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     </head>
+
     <body>
-        <button class= "button"> Click Me!</button>
+        <!-- ===== Header ===== -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div>
+                    <a href="#" class="nav_logo">Parteek</a>
+                </div>
+
+                <div class="nav_menu" id="nav-menu">
+                    <div class="nav_close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <ul class="nav_list">
+                        <li class="nav_item"> <a href="#home" class"nav_link active">Home</a></li>
+                        <li class="nav_item"> <a href="#about" class"nav_link">About</a></li>
+                        <li class="nav_item"> <a href="#skills" class"nav_link">Skills</a></li>
+                        <li class="nav_item"> <a href="#works" class"nav_link">Works</a></li>
+                        <li class="nav_item"> <a href="#contact" class"nav_link">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== Home =====-->
+            <section class="home" id="home">
+                <div class="home_container bd-grid">
+                    <div class="home_data">
+                        <div class="home_img">
+                            <img src="images/Parteek.png" alt="">
+                        </div>
+
+                        <h1 class="home_title">Parteek</h1>
+                        <span class="home_profession">Software Developer</span>
+
+                        <div class="home_social">
+                            <a href="https://www.linkedin.com/in/parteek-/" class="home_social-link"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/P4RT33K" class="home_social-link"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.facebook.com/parteek.gorkhey.786" class="home_social-link"><i class='bx bxl-facebook' ></i></a>
+                            <a href="https://www.instagram.com/_parteek.786/" class="home_social-link"><i class='bx bxl-instagram' ></i></a>
+                        </div>
+
+                        <a download=" href="#" class="button home_button">Download resume</a>
+                    </div>
+                </div>
+            </section>
+            <!--===== About =====-->
+
+            <!--===== Skills =====-->
+
+            <!--===== Works =====-->
+
+            <!--===== Contact =====-->
+
+        </main>
     </body>
     <script src="js/script.js">
     </script>
