@@ -170,7 +170,7 @@ img{
     width: 1px;
     background-color: #4dd0e1;
 }
-/* @keyframes spin{
+@keyframes spin{
     0%{
         transform: rotate(0deg);
     }
@@ -193,7 +193,7 @@ img{
     50%{
         transform: translateX(25px);
     }
-} */
+}
 
 
 /* ==  HEADER  == */
