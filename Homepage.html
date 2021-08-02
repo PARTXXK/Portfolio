@@ -1,88 +1,74 @@
-<!-- Main Page -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title> Personal portfolio | Parteek! </title>
-
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="style.css">
-
-        <!-- ===== Box icons ===== -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-
-    <body>
-        <!-- ===== Header ===== -->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio | Parteek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- == MAIN CSS == -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- == DEFAULT COLOR SKIN == -->
+    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="Homepage.html">P</a>
                 </div>
-
-                <div>
-                    <a href="#" class="nav_logo">Parteek</a>
+                <div class="hamburger-button outer-shadow hover-in-shadow">
+                    <span></span>
                 </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
 
-                <div class="nav_menu" id="nav-menu">
-                    <div class="nav_close" id="nav-close">
-                        <i class='bx bx-x' ></i>
+    <!-- NAVIGATION MENU START -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#" class="inner-shadow active">Home</a></li>
+                <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="#" class="outer-shadow hover-in-shadow">Services</a></li>
+                <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
+                <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+            </ul>
+        </div>
+        <!-- COPYRIGHT TEXT -->
+        <p class="copyright-text">&copy; 2021 Parteek</p>
+    </nav>
+    <!-- NAVIGATION MENU END -->
+
+    <!-- HOME SECTION START -->
+    <section class="home-section section">
+        <!-- EFFECT WRAP START -->
+        <div class="effect-wrap">
+            <div class="effect effect-1">
+            </div>
+            <div class="effect effect-2">
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            </div>
+        </div>
+        <!-- EFFECT WRAP END -->
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <p>Hello</p>
+                    <h2>I'm Parteek</h2>
+                    <h1>Web Designer & Developer</h1>
+                    <a href="#" class="button-1 outer-shadow hover-in-shadow">More About Me</a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box inner-shadow">
+                        <img src="images/Parteek.png" class="outer-shadow" alt="profile-pic">
                     </div>
-
-                    <ul class="nav_list">
-                        <li class="nav_item"> <a href="#home" class"nav_link active">Home</a></li>
-                        <li class="nav_item"> <a href="#about" class"nav_link">About</a></li>
-                        <li class="nav_item"> <a href="#skills" class"nav_link">Skills</a></li>
-                        <li class="nav_item"> <a href="#works" class"nav_link">Works</a></li>
-                        <li class="nav_item"> <a href="#contact" class"nav_link">Contact me</a></li>
-                    </ul>
                 </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== Home =====-->
-            <section class="home" id="home">
-                <div class="home_container bd-grid">
-                    <div class="home_data">
-                        <div class="home_img">
-                            <img src="images/Parteek.png" alt="">
-                        </div>
-
-                        <h1 class="home_title">Parteek</h1>
-                        <span class="home_profession">Software Developer</span>
-
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/parteek-/" class="home_social-link"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/P4RT33K" class="home_social-link"><i class='bx bxl-github' ></i></a>
-                            <a href="https://www.facebook.com/parteek.gorkhey.786" class="home_social-link"><i class='bx bxl-facebook' ></i></a>
-                            <a href="https://www.instagram.com/_parteek.786/" class="home_social-link"><i class='bx bxl-instagram' ></i></a>
-                        </div>
-
-                        <a download=" href="#" class="button home_button">Download resume</a>
-                    </div>
-                </div>
-            </section>
-            <!--===== About =====-->
-            <section class="about section" id="about">
-                <span class="section-subtitle">My introduction</span>
-                <h2 class="section-title">About Me</h2>
-
-                <div class="about_container bd grid">
-                    <div class="about_data">
-                        <p class="about_description">Hi, I'm a student at Sheridan College, pursuing Advanced Diploma in Computer Systems Technology - SDNE. I'm mainly into front-end stuff, but I know back-end too. I've also started learning UI/UI designing.</p>
-                        
-                </div>
-            </section>
-
-            <!--===== Skills =====-->
-
-            <!--===== Works =====-->
-
-            <!--===== Contact =====-->
-
-        </main>
-    </body>
-    <script src="js/script.js">
-    </script>
+            </div>
+        </div>
+    <!-- HOME SECTION END -->
+</body>
 </html>
