@@ -492,6 +492,7 @@ img{
 .about-section .tab-content{
     flex: 0 0 100%;
     max-width: 100%;
+    display: none;
 }
 .about-section .skills{
     padding: 0 0 40px;
@@ -530,6 +531,7 @@ img{
     color: var(--text-black-600);
     margin-top: -40px;
 }
+.about-section .education,
 .about-section .experience{
     padding-bottom: 80px;
 }
