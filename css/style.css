@@ -8,6 +8,7 @@
     --bg-black-900: #000000;
     --bg-black-100: #dddddd;
     --bg-black-50: #eff0f4;
+    --bg-opacity: rbga(255, 255, 255, 0.5);
     --text-black-900: #000000;
     --text-black-700: #555555;
     --text-black-600: #666666;
@@ -22,6 +23,9 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--bg-black-50);
+}
+body.hidden-scrolling{
+    overflow-y: hidden;
 }
 * :not(i){
     font-family: 'Raleway', sans-serif;
@@ -754,6 +758,8 @@ img{
     display: none;
 }
 .projects-section .projects-item.show{
+    display: block;
+    animation: fadeInTop 0.5s ease;
 }
 .projects-section .projects-item-inner{
     padding: 15px;
@@ -809,13 +815,40 @@ img{
     width: 100%;
     height: 100%;
     z-index: 1000;
-    overflow-y: auto;
+    overflow-y: scroll;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.3s ease;
 }
 .projects-popup.open{
     visibility: visible;
     opacity: 1;
+}
+.projects-popup .pp-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1005;
+    background-color: var(--bg-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.projects-popup .pp-loader.active{
+    visibility: visible;
+    opacity: 1;
+}
+.projects-popup .pp-loader div{
+    height: 40px;
+    width: 40px;
+    border: 3px solid var(--skin-color);
+    border-radius: 50%;
+    border-right: 3px solid transparent;
+    animation: spin 2s linear infinite;
 }
 .projects-popup .pp-details{
     max-width: 1350x;
@@ -824,6 +857,10 @@ img{
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    transition: all 0.5s ease;
+}
+.projects-popup .pp-details.active{
+    opacity: 1;
 }
 .projects-popup .pp-details-inner{
     padding: 30px 0;
@@ -848,6 +885,7 @@ img{
 }
 .projects-popup .pp-title p span{
     font-weight: 400;
+    text-transform: capitalize;
 }
 .projects-popup .pp-project-details h3{
     font-size: 20px;
@@ -881,6 +919,9 @@ img{
 }
 .projects-popup .info ul li span{
     font-weight: 400;
+}
+.projects-popup .info ul li a{
+    color: var(--skin-color);
 }
 .projects-popup .info ul li:last-child{
     margin-bottom: 0;
