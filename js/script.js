@@ -20,3 +20,58 @@
         }
     })
 })();
+
+
+/* ==  PROJECTS FILTER AND POPUP  == */
+(() =>{
+    const filterContainer = document.querySelector(".projects-filter"),
+    projectsItemsContainer = document.querySelector(".projects-items"),
+    projectsItems = document.querySelectorAll(".projects-item"),
+    popup = document.querySelector(".projects-popup"),
+    prevBtn = popup.querySelector(".pp-prev"),
+    nextBtn = popup.querySelector(".pp-next"),
+    closeBtn = popup.querySelector(".pp-close"),
+    projectDetailsContainer = popup.querySelector(".pp-details"),
+    projectDetailsBtn = popup.querySelector(".pp-project-details-button");
+
+    let itemIndex, slideIndex, screenshots;
+
+    /* filter projects items */
+    filterContainer.addEventListener("click", (event)=>{
+        if(event.target.classList.contains("filter-item") && !event.target.classList.contains("active")){
+        // deactivate existing active 'filter-item'
+        filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+        // activate new 'filter-item'
+        event.target.classList.add("active", "outer-shadow");
+        const target = event.target.getAttribute("data-target");
+        projectsItems.forEach((item) => {
+            if(target === item.getAttribute("data-category") || target === 'all'){
+                item.classList.remove("hide");
+                item.classList.add("show");
+            }
+            else{
+                item.classList.remove("show");
+                item.classList.add("hide");
+            }
+        })
+    }
+    })
+
+    projectsItemsContainer.addEventListener("click", (event)=>{
+        if(event.target.closest(".projects-item.inner")){
+            const projectsItem = event.target.closest(".projects-item-inner").parentElement;
+            // get the projectItem Index
+            itemIndex = Array.from(projectsItem.parentElement.children).indexOf(projectsItem);
+            screenshots = projectsItems[itemIndex].querySelector(".projects-item-img img").getAttribute("data-screenshots");
+            // convert screenshots into Array
+            screenshots = screenshots.split(",");
+            SlideIndex = 0;
+            popupToggle();
+        }
+    })
+
+    function popupToggle(){
+        popup.classList.toggle("open");
+    }
+
+})();
