@@ -1,3 +1,28 @@
+/* == NAVIGATION MENU == */
+(() =>{
+
+    const hamburgerBtn = document.querySelector(".hamburger-button"),
+    navMenu = document.querySelector(".nav-menu"),
+    closeNavBtn = navMenu.querySelector(".close-nav-menu");
+
+    hamburgerBtn.addEventListener("click", showNavMenu);
+    closeNavBtn.addEventListener("click", hideNavMenu);
+
+    function showNavMenu(){
+        navMenu.classList.add("open");
+    }
+    function hideNavMenu(){
+        navMenu.classList.remove("open");
+        fadeOutEffect();
+    }
+    function fadeOutEffect(){
+        document.querySelector(".fade-out-effect").classList.add("active");
+        setTimeout(() =>{
+            document.querySelector(".fade-out-effect").classList.remove("active");
+        }, 300)
+    }
+})();
+
 /* ==  ABOUT SECTION TABS  == */
 (() => {
     const aboutSection = document.querySelector(".about-section"),
@@ -172,5 +197,17 @@ function bodyScrollingToggle() {
             popup.scrollTo(0, projectDetailsContainer.offsetTop);
         }
     }
+
+})();
+
+/* ==  HIDE ALL SECTIONS EXCEPT ACTIVE  == */
+(() =>{
+
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((section) =>{
+        if(!section.classList.contains("active")){
+            section.classList.add("hide");
+        }
+    })
 
 })();
