@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- == DEFAULT COLOR SKIN == -->
     <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+    <!-- == STTYLE SWITCHER == -->
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
     <!-- HEADER START -->
@@ -682,26 +684,28 @@
     <!-- PROJECTS POPUP END -->
 
     <!-- STYLE SWITCHER START -->
-    <div class="style-switcher">
-        <div class="style-toggler">
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
             <i class="fas fa-cog fa-spin"></i>
         </div>
-        <div class="day-night">
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
             <i class="fas fa-moon"></i>
         </div>
         <h4>theme colours</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
     </div>
     <!-- STYLE SWITCHER END -->
 
     <!-- == MAIN JS == -->
     <script src="js/script.js"></script>
+    <!-- == STYLE SWITCHER JS == -->
+    <script src="js/style-switcher.js"></script>
 
 </body>
 </html>
