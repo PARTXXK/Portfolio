@@ -39,7 +39,7 @@
 }
 .style-switcher h4{
     margin: 0 0 10px;
-    color: var(--text-lack-700);
+    color: var(--text-black-700);
     font-style: 16px;
     font-weight: 600;
     text-transform: capitalize;
