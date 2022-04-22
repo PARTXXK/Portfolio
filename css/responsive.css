@@ -56,6 +56,9 @@
     .about-section .timeline:before{
         left: 35px;
     }
+    .about-section .timeline .timeline-item-inner:before{
+        left: 35px;
+    }
     .about-section .timeline .timeline-item:nth-child(odd) .icon{
         right: auto;
         left: -60px;
