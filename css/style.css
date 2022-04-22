@@ -708,7 +708,7 @@ img{
     top: 18px;
 }
 .about-section .timeline .timeline-item:nth-child(odd) .icon{
-    right: -110px;
+    right: -70px;
 }
 .about-section .timeline .timeline-item:nth-child(even) .icon{
     left: -70px;
