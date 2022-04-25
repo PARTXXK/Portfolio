@@ -1,1 +1,1 @@
-Open this: https://p4rt33k.github.io/Portfolio/Homepage.html
+Open this: https://parteek-portfolio.netlify.app/homepage
