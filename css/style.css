@@ -637,7 +637,7 @@ img{
 .about-section .skills .skill-item .progress-bar span{
     position: absolute;
     right: 0;
-    top: 0;
+    top: 60px;
     font-size: 16px;
     font-weight: 500;
     color: var(--text-black-600);
@@ -705,14 +705,20 @@ img{
     text-transform: capitalize;
 }
 .about-section .timeline .timeline-item-inner h3{
-    font-size: 20px;
+    font-size: 22px;
     color: var(--text-black-700);
     font-weight: 600;
     margin: 0 0 5px;
     text-transform: capitalize;
 }
 .about-section .timeline .timeline-item-inner h4{
-    font-size: 16px;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--text-black-600);
+    margin: 0;
+}
+.about-section .timeline .timeline-item-inner h5{
+    font-size: 12px;
     font-style: italic;
     color: var(--text-black-600);
     margin: 0;
