@@ -678,22 +678,6 @@ img{
     border-radius: 5px;
     position: relative;
 }
-.about-section .timeline .timeline-item-inner:before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 1px;
-    background-color: var(--bg-black-100 );
-    top: 37px;
-    z-index: -1;
-}
-.about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
-    right: -70px;
-    width: 70px;
-}
-.about-section .timeline .timeline-item:nth-child(even) .timeline-item-inner:before{
-    left: -30px;
-}
 .about-section .timeline .timeline-item-inner .icon{
     height: 40px;
     width: 40px;
