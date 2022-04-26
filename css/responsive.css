@@ -19,6 +19,10 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .projects-popup .info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .home-section .home-text{
         order: 2;
     }

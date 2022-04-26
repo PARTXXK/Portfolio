@@ -837,8 +837,7 @@ img{
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    display: flow-root;
 }
 .projects-section .projects-item.hide{
     display: none;
