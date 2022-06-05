@@ -17,8 +17,6 @@ Problems that I faced:
 - The main problem was time management. I didn't work on the website for like 3 months, mainly because I had shifted countries at that time, from India to Canada in September. So, it was a time, I had to face a lot of shifts in living conditions. Life has been quite rough, but that talk is for another time.
 - Another problem was my anxiety, as I would sometimes give up working on it in between as I felt that I was not capable to do it. But, slowly, I pushed through it and made it this far.
 
-I haven't set an 'end date' because I think that portfolio websites never end up. And, as our Project Management professor says, some projects never end, they just get better.
-
 Thank you for all your support and for listening to me this far.
 
 Please do look into my portfolio and do give feedback. I would really appreciate it.
