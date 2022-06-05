@@ -21,4 +21,4 @@ Thank you for all your support and for listening to me this far.
 
 Please do look into my portfolio and do give feedback. I would really appreciate it.
 
-P.S. - Love you guys a lot :)
+![An image exists here](/readme_images/readme.jpg)
