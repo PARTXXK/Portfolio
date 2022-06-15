@@ -1,6 +1,6 @@
-## Hi guys! I made my personal portfolio website.
+## Hi guys! I made my personal portfolio website.         (2021 - current)
 
-### [This is my personal portfolio website](https://parteek-portfolio.netlify.app/homepage), that I've coded in the Atom desktop application. I made this website using HTML5, CSS3 & JS and is currently hosted on Netlify.
+### [This is my personal portfolio website](https://parteek-portfolio.netlify.app/homepage), that I've coded in the Atom desktop application, now on VS Code. I made this website using HTML5, CSS3 & JS and is currently hosted on Netlify.
 
 The main sections are:
 - About Me - In this section, I've put a small description about me, along with all the social media handles I use. The main area is then divided into three different parts, skills, experience & education. There is also an option to download my resume.
