@@ -1,4 +1,4 @@
-# Hi guys! I made my personal portfolio website.         (2021 - current)
+My personal portfolio website.  (2021 - current)
 
 ## [This is my personal portfolio website](https://parteek-portfolio.netlify.app/homepage), that I Initially coded in the Atom desktop application, now on VS Code. I made this website using HTML5, CSS3 & Vanilla JS and is currently hosted on Netlify.
 
