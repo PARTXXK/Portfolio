@@ -4,6 +4,10 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .about-section .skills .skill-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 @media(max-width: 767px){
     .contact-section .w-50,
@@ -48,6 +52,9 @@
     }
     .about-section .about-img{
         padding-bottom: 30px;
+    }
+    .about-section .skills .skill-item p .devicon{
+        max-width: 5em;
     }
     .about-section .timeline .timeline-item:nth-child(odd){
         padding-right: 15px;

@@ -616,32 +616,11 @@ img{
     margin-bottom: 40px;
 }
 .about-section .skills .skill-item p{
-    font-size: 16px;
-    color: var(--text-black-600);
-    text-transform: capitalize;
     margin: 0 0 10px;
 }
-.about-section .skills .skill-item .progress{
-    height: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-.about-section .skills .skill-item .progress-bar{
-    background-color: var(--text-black-600);
-    height: 6px;
-    left: 7px;
-    top: 7px;
-    position: absolute;
-    border-radius: 10px;
-}
-.about-section .skills .skill-item .progress-bar span{
-    position: absolute;
-    right: 0;
-    top: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--text-black-600);
-    margin-top: -40px;
+.about-section .skills .skill-item p .devicon{
+    max-width: 7em;
+    margin-right: 50%;
 }
 .about-section .education,
 .about-section .experience{
