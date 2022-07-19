@@ -625,6 +625,18 @@ img{
     margin-right: auto;
     width: 50%;
 }
+.about-section .skills .skill-item p:hover .hide{
+    visibility: visible;
+    transition: all 0.6s ease;
+}
+.about-section .skills .skill-item .hide{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-black-600);
+    visibility: hidden;
+}
 .about-section .education,
 .about-section .experience{
     padding-bottom: 80px;
